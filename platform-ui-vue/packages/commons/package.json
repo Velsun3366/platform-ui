@@ -1,5 +1,5 @@
 {
-    "name": "commons",
+    "name": "@platform-ui/commons",
     "version": "1.0.0",
-    "scripts": {}
+    "main": "index.ts"
 }

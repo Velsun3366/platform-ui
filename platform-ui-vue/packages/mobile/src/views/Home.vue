@@ -11,6 +11,7 @@
                     <ion-title size="large">Home</ion-title>
                 </ion-toolbar>
             </ion-header>
+            <div class="test">A</div>
         </ion-content>
     </ion-page>
 </template>
@@ -18,3 +19,9 @@
 <script lang="ts" setup>
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 </script>
+
+<style lang="scss" scoped>
+.test {
+    @apply text-left;
+}
+</style>

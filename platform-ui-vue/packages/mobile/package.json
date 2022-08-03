@@ -1,5 +1,5 @@
 {
-    "name": "mobile",
+    "name": "@platform-ui/mobile",
     "version": "1.0.0",
     "private": true,
     "scripts": {
@@ -8,6 +8,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@platform-ui/commons": "workspace:*",
         "@ionic/vue": "^6.2.0",
         "@ionic/vue-router": "^6.2.0",
         "ionicons": "^6.0.2",
@@ -15,15 +16,15 @@
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^3.0.1",
-        "autoprefixer": "^10.4.7",
+        "autoprefixer": "^10.4.8",
         "postcss": "^8.4.14",
-        "sass": "^1.54.0",
-        "tailwindcss": "^3.1.6",
+        "sass": "^1.54.1",
+        "tailwindcss": "^3.1.7",
         "typescript": "^4.7.4",
-        "unplugin-auto-import": "^0.10.2",
-        "unplugin-icons": "^0.14.7",
+        "unplugin-auto-import": "^0.10.3",
+        "unplugin-icons": "^0.14.8",
         "unplugin-vue-components": "^0.21.2",
-        "vite": "^3.0.3",
+        "vite": "^3.0.4",
         "vite-plugin-inspect": "^0.6.0",
         "vite-plugin-vconsole": "^1.2.2",
         "vite-tsconfig-paths": "^3.5.0"
