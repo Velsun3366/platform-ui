@@ -9,9 +9,7 @@
     },
     "dependencies": {
         "@platform-ui/commons": "workspace:*",
-        "@ionic/vue": "^6.2.2",
-        "@ionic/vue-router": "^6.2.2",
-        "ionicons": "^6.0.2",
+        "vant": "^3.5.4",
         "vue": "^3.2.37"
     },
     "devDependencies": {
