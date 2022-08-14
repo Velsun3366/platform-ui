@@ -179,7 +179,7 @@ importers:
       unplugin-auto-import: ^0.11.1
       unplugin-icons: ^0.14.8
       unplugin-vue-components: ^0.22.4
-      vant: ^3.5.4
+      vant: ^4.0.0-0
       vite: ^3.0.7
       vite-plugin-inspect: ^0.6.0
       vite-plugin-vconsole: ^1.2.2
@@ -187,7 +187,7 @@ importers:
       vue: ^3.2.37
     dependencies:
       '@platform-ui/commons': link:../commons
-      vant: 3.5.4_vue@3.2.37
+      vant: 4.0.0-beta.0_vue@3.2.37
       vue: 3.2.37
     devDependencies:
       '@vitejs/plugin-vue': 3.0.3_vite@3.0.7+vue@3.2.37
@@ -5036,8 +5036,8 @@ packages:
     engines: {node: '>= 0.10'}
     dev: false
 
-  /vant/3.5.4_vue@3.2.37:
-    resolution: {integrity: sha512-NwKDfYk1A1ax4WZRSpOse0GsDSMQWoB245fhzzduXW6J3qv4f/cn3CedxH/uzBXglhNXovFTExFvnYjt5fzp3Q==}
+  /vant/4.0.0-beta.0_vue@3.2.37:
+    resolution: {integrity: sha512-Y418/RCxmnijsKpl+heEN1qpf2L6V0GrtvhQYjFDZEumX+nTzqjIRpStAxZRODI3TbQk3BzwvloU5EVJs+X7Zg==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
