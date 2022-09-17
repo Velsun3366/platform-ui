@@ -5,6 +5,12 @@ rm -rf package-lock.json
 rm -rf pnpm-lock.yaml
 rm -rf node_modules
 ncu -u
+# mp
+cd ../../packages/mp
+rm -rf package-lock.json
+rm -rf pnpm-lock.yaml
+rm -rf node_modules
+ncu -u
 # mobile
 cd ../../packages/mobile
 rm -rf package-lock.json

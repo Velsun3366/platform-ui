@@ -6,6 +6,8 @@ import { test } from '@platform-ui/commons';
 export const setupApp = (app: App) => {
     //
     app.use(router);
+    // vant
+    app.use(ConfigProvider);
     //
     router.isReady().then(() => {
         app.mount('#app');
