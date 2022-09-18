@@ -2,7 +2,9 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default ({ command, mode }) => {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+export default defineConfig(async ({ command, mode }) => {
     const env = loadEnv(mode, process.cwd());
     console.log(`command - ${command}. mode - ${mode}.`);
     console.log(env);
@@ -10,7 +12,7 @@ export default ({ command, mode }) => {
     const config = defineConfig({
         base: env.VITE_APP_BASE ?? '/',
         server: {
-            port: env.VITE_APP_PORT ?? 8081,
+            port: 8081,
         },
         resolve: {
             alias: {
@@ -38,4 +40,4 @@ export default ({ command, mode }) => {
         };
     }
     return config;
-};
+});

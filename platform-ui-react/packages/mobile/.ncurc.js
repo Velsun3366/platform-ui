@@ -1,3 +1,3 @@
 module.exports = {
-    reject: [],
+    reject: ['react-router', 'react-router-dom'],
 };

@@ -1,5 +1,5 @@
 import { defineConfig, loadEnv } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default ({ command, mode }) => {
@@ -25,7 +25,7 @@ export default ({ command, mode }) => {
                 },
             },
         },
-        plugins: [reactRefresh(), tsconfigPaths()],
+        plugins: [react(), tsconfigPaths()],
     });
 
     if (command === 'build' && mode === 'watch') {
