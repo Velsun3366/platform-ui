@@ -11,7 +11,7 @@
         "@platform-ui/commons": "workspace:*",
         "@ant-design/icons-vue": "^6.1.0",
         "@element-plus/icons-vue": "^2.0.9",
-        "element-plus": "^2.2.16",
+        "element-plus": "^2.2.17",
         "vue": "^3.2.39"
     },
     "devDependencies": {
@@ -23,9 +23,9 @@
         "tailwindcss": "^3.1.8",
         "typescript": "^4.8.3",
         "unplugin-auto-import": "^0.11.2",
-        "unplugin-icons": "^0.14.9",
+        "unplugin-icons": "^0.14.10",
         "unplugin-vue-components": "^0.22.7",
-        "vite": "^3.1.1",
+        "vite": "^3.1.2",
         "vite-plugin-inspect": "^0.7.1",
         "vite-plugin-vconsole": "^1.2.2",
         "vite-tsconfig-paths": "^3.5.0"
