@@ -1,16 +1,16 @@
 import { defineConfig, loadEnv } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default ({ command, mode }) => {
+// @ts-ignore
+export default defineConfig(async ({ command, mode }) => {
     const env = loadEnv(mode, process.cwd());
     console.log(`command - ${command}. mode - ${mode}.`);
     console.log(env);
-
     const config = defineConfig({
         base: env.VITE_APP_BASE ?? '/',
         server: {
-            port: env.VITE_APP_PORT ?? 8083,
+            port: 8083,
         },
         resolve: {
             alias: {
@@ -27,9 +27,8 @@ export default ({ command, mode }) => {
                 },
             },
         },
-        plugins: [reactRefresh(), tsconfigPaths()],
+        plugins: [react(), tsconfigPaths()],
     });
-
     if (command === 'build' && mode === 'watch') {
         return {
             ...config,
@@ -40,4 +39,4 @@ export default ({ command, mode }) => {
         };
     }
     return config;
-};
+});
